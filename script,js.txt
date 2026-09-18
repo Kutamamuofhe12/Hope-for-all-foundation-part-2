@@ -1,0 +1,12 @@
+document.getElementById('membership-type').addEventListener('change', function() {
+    var paymentAmountField = document.getElementById('payment-amount');
+    var membershipType = this.value;
+    
+    if (membershipType === 'individual') {
+        paymentAmountField.value = 'R500';
+    } else if (membershipType === 'student') {
+        paymentAmountField.value = 'R200';
+    } else if (membershipType === 'organization') {
+        paymentAmountField.value = 'R1500';
+    }
+});
